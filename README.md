@@ -1,12 +1,12 @@
-### Hackathon 1: Dominando Git y GitHub
+# Hackathon 1: Dominando Git y GitHub 🚀
 
-#### Consideraciones Generales
+### Consideraciones Generales 📋
 
 Bienvenidos a la primera hackathon del semestre 20242 del curso CS2031: Desarrollo Basado en Plataformas. En esta edición, nos centraremos exclusivamente en Git y GitHub, herramientas fundamentales para cualquier desarrollador. En lugar de enfocarnos en la escritura de código, nos dedicaremos a perfeccionar nuestras habilidades en el manejo de repositorios, la colaboración en equipos y la integración continua. 
 
 Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Será crucial que trabajen en conjunto para cumplir con todos los checkpoints establecidos. Es importante que mantengan una comunicación constante y que asignen tareas de manera equitativa. Al ser una actividad grupal, la organización y la cooperación serán clave para el éxito.
 
-#### Instrucciones Generales
+### Instrucciones Generales 📝
 
 1. **Formación de Equipos**: Los equipos deben estar conformados por 4 alumnos de la misma sección de laboratorio. Cada equipo debe asegurarse de que todos sus miembros participen activamente en cada checkpoint. 
 
@@ -14,9 +14,9 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
 
 3. **Entrega y Evaluación**: Al finalizar la hackathon, se revisará el repositorio de cada equipo. Asegúrense de cumplir con todos los requisitos antes de la hora límite. Se evaluará tanto el trabajo grupal como la participación individual a través del historial de commits y los pull requests realizados.
 
-#### Checkpoints
+### Checkpoints 📌
 
-##### **Checkpoint 1: Configuración Inicial**
+#### **Checkpoint 1: Configuración Inicial** ⚙️
 - **Objetivo**: Configurar adecuadamente el entorno de trabajo local y la cuenta en GitHub.
   - **Tareas**:
     1. Cada miembro del equipo debe configurar Git en su máquina local (configurar usuario, email, nombre).
@@ -24,7 +24,7 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
     3. Generar claves SSH en sus máquinas locales y agregarlas a sus cuentas de GitHub.
   - **Evaluación**: muestre la configuración de Git local y la adición exitosa de la clave SSH en su cuenta de GitHub.
 
-##### **Checkpoint 2: Creación y Configuración del Repositorio**
+#### **Checkpoint 2: Creación y Configuración del Repositorio** 📦
 - **Objetivo**: Crear y configurar un repositorio en GitHub que refleje buenas prácticas de desarrollo colaborativo.
   - **Tareas**:
     1. Crear un repositorio público o privado en GitHub. Este repositorio será compartido por todos los miembros del equipo.
@@ -32,7 +32,7 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
     3. Configurar las reglas de la rama `main` para que no se pueda hacer `push` directo a esta rama. Los cambios en `main` solo deben realizarse mediante pull requests aprobados.
   - **Evaluación**: Proveer un enlace al repositorio y capturas de pantalla de la configuración de las reglas de la rama `main`.
 
-##### **Checkpoint 3: Gestión de Issues y Pull Requests**
+#### **Checkpoint 3: Gestión de Issues y Pull Requests** 🔄
 - **Objetivo**: Implementar un flujo de trabajo que simule un entorno colaborativo real.
   - **Tareas**:
     1. Crear un issue en GitHub para cada miembro del equipo. El título del issue debe reflejar la tarea que realizará cada miembro (ejemplo: "Añadir nombre al README.md").
@@ -42,7 +42,7 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
     5. Resolver cualquier conflicto que pueda surgir durante el proceso de merge.
   - **Evaluación**: Mostrar los issues creados, las ramas correspondientes, y el historial de pull requests. Se verificará que haya un pull request por cada miembro del equipo.
 
-##### **Checkpoint 4: Implementación de GitHub Actions**
+#### **Checkpoint 4: Implementación de GitHub Actions** 🤖
 - **Objetivo**: Configurar la integración continua para asegurar la calidad del código mediante pruebas automatizadas.
   - **Tareas**:
     1. Se les proporcionará un archivo de funciones en Python (`main.py`) y un archivo de pruebas (`test_main.py`).
@@ -57,4 +57,4 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
 - **Documentación**: Asegúrense de documentar cada paso realizado en el repositorio, utilizando los mensajes de commit y el archivo `README.md`.
 - **Fecha Límite**: La hackathon deberá completarse antes del [fecha límite específica], momento en el cual los repositorios serán revisados.
 
-¡Buena suerte a todos! Que esta hackathon sea una oportunidad para fortalecer su dominio de Git y GitHub, y para aprender a trabajar de manera más efectiva en equipo.
+¡Buena suerte a todos!⚡ Que esta hackathon sea una oportunidad para fortalecer su dominio de Git y GitHub. 
