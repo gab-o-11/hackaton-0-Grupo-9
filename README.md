@@ -1,4 +1,4 @@
-# Hackathon 1: Dominando Git y GitHub 🚀
+# Hackathon 0: Dominando Git y GitHub 🚀
 
 ### Consideraciones Generales 📋
 
@@ -42,85 +42,37 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
     5. Resolver cualquier conflicto que pueda surgir durante el proceso de merge.
   - **Evaluación**: Mostrar los issues creados, las ramas correspondientes, y el historial de pull requests. Se verificará que haya un pull request por cada miembro del equipo.
 
-#### **Checkpoint 4: Desarrollo del CRUD en FastAPI** ⚙️
-- **Objetivo**: Implementar un CRUD básico utilizando FastAPI y almacenar los datos en un archivo JSON.
+#### **Checkpoint 4: Resolución de Conflictos en Pull Requests** 🔧
+- **Objetivo**: Trabajar con issues, pull requests, y resolver conflictos en el merge mientras se desarrolla un mini proyecto en Python.
+
+  - **Descripción del Proyecto**:
+    - El equipo desarrollará una **calculadora en línea de comandos** que permita realizar operaciones básicas (suma, resta, multiplicación y división).
+    - La calculadora debe permitir a los usuarios **escribir operaciones completas** (por ejemplo, `2 + 2`), y al presionar **Enter**, la operación se debe calcular y mostrar el resultado.
+    - Si el usuario presiona la tecla **'c'**, la operación escrita debe ser borrada.
+
+  - **Tareas (Issues)**:
+    1. **Issue 1:** Implementar la función de **suma** en la calculadora.
+    2. **Issue 2:** Implementar la función de **resta** en la calculadora.
+    3. **Issue 3:** Implementar la función de **multiplicación** en la calculadora.
+    4. **Issue 4:** Implementar la función de **división** en la calculadora.
+
+  - **Requisitos**:
+    - Cada tarea debe ser creada como un **issue** en GitHub con una descripción detallada, nombres de los responsables y un estimado de tiempo.
+    - Cada tarea debe ser resuelta en una **rama separada** y enviada como un pull request.
+    - Se debe provocar **conflictos de merge** en al menos un pull request, los cuales deberán ser resueltos por el equipo.
+
+  - **Evaluación**:
+    - Se revisarán los issues creados, las ramas correspondientes, los pull requests, y la resolución efectiva de los conflictos.
+    - La calculadora debe cumplir con los requisitos de funcionalidad especificados.
+
+#### **Checkpoint 5: Testing Automatizado con GitHub Actions** ✅
+- **Objetivo**: Implementar pruebas automatizadas utilizando GitHub Actions.
   - **Tareas**:
-    1. Crear un archivo `crud.py` donde se implementará un CRUD básico utilizando FastAPI.
-    2. El CRUD deberá manejar operaciones básicas de creación, lectura, actualización y eliminación (Create, Read, Update, Delete).
-    3. Los datos manejados por el CRUD se almacenarán en un archivo JSON que debe ser actualizado dinámicamente.
-    4. Asegurarse de que el CRUD sea funcional y esté correctamente documentado en el archivo `README.md`.
-    5. Implementar los siguientes endpoints adicionales:
-       - **Obtener todos los productos antes de una fecha específica**
-         - **Endpoint**: `GET /items/before/{date}`
-         - **Descripción**: Obtener todos los equipos que fueron ingresados antes de una fecha específica.
-         - **Respuesta**: Una lista de todos los objetos de equipo antes de la fecha dada.
-       - **Obtener todos los productos en un rango de precios**
-         - **Endpoint**: `GET /items/price_range/`
-         - **Descripción**: Obtener todos los equipos cuyo precio esté dentro de un rango específico.
-         - **Parámetros de consulta**: `min_price` (float), `max_price` (float).
-         - **Respuesta**: Una lista de todos los objetos de equipo dentro del rango de precios especificado.
-  - **Evaluación**: Se verificará la correcta implementación del CRUD, la actualización del archivo JSON con cada operación y el funcionamiento de los nuevos endpoints. Se revisará la documentación en el `README.md`.
-
-#### **Checkpoint 5: Pruebas Automatizadas con GitHub Actions** 🤖
-- **Objetivo**: Configurar la integración continua para asegurar la calidad del código mediante pruebas automatizadas.
-  - **Tareas**:
-    1. Se les proporcionará un archivo `test_crud.py` que contiene pruebas automatizadas para el CRUD implementado en el Checkpoint 4.
-    2. Configurar un GitHub Action que ejecute automáticamente `test_crud.py` cada vez que se realice un pull request a `main`.
-    3. Asegurarse de que todas las pruebas pasen correctamente.
-    4. Documentar en el `README.md` cómo configuraron el GitHub Action y los resultados esperados de las pruebas.
-  - **Evaluación**: Se verificará la configuración del GitHub Action y que todas las pruebas se ejecuten correctamente en cada pull request.
-
-### Endpoints del CRUD en FastAPI
-
-A continuación se listan todos los endpoints que se deberán implementar en `crud.py`:
-
-1. **Crear un equipo en el inventario**
-   - **Endpoint**: `POST /items/`
-   - **Descripción**: Agregar un nuevo equipo al inventario.
-   - **Cuerpo de la solicitud**: JSON con los siguientes campos:
-     ```json
-     {
-       "id": "str",
-       "name": "str",
-       "description": "str",
-       "quantity": "int",
-       "price": "float",
-       "date_of_entry": "str"  // Formato YYYY-MM-DD
-     }
-     ```
-   - **Respuesta**: El objeto del equipo recién creado.
-
-2. **Obtener todos los equipos**
-   - **Endpoint**: `GET /items/`
-   - **Descripción**: Obtener la lista de todos los equipos en el inventario.
-   - **Respuesta**: Una lista de todos los objetos de equipo.
-
-3. **Obtener un equipo por ID**
-   - **Endpoint**: `GET /items/{id}`
-   - **Descripción**: Obtener la información de un equipo específico utilizando su ID.
-   - **Respuesta**: El objeto del equipo correspondiente al ID proporcionado.
-
-4. **Actualizar un equipo**
-   - **Endpoint**: `PUT /items/{id}`
-   - **Descripción**: Actualizar la información de un equipo específico utilizando su ID.
-   - **Cuerpo de la solicitud**: JSON con los campos que se desean actualizar (mismo formato que en la creación).
-   - **Respuesta**: El objeto del equipo actualizado.
-
-5. **Eliminar un equipo**
-   - **Endpoint**: `DELETE /items/{id}`
-   - **Descripción**: Eliminar un equipo del inventario utilizando su ID.
-   - **Respuesta**: Un mensaje confirmando la eliminación.
-
-6. **Obtener todos los productos antes de una fecha específica**
-   - **Endpoint**: `GET /items/before/{date}`
-   - **Descripción**: Obtener todos los equipos que fueron ingresados antes de una fecha específica.
-   - **Respuesta**: Una lista de todos los objetos de equipo antes de la fecha dada.
-
-7. **Obtener todos los productos en un rango de precios**
-   - **Endpoint**: `GET /items/price_range/`
-   - **Descripción**: Obtener todos los equipos cuyo precio esté dentro de un rango específico.
-   - **Parámetros de consulta**: `min_price` (float), `max_price` (float).
-   - **Respuesta**: Una lista de todos los objetos de equipo dentro del rango de precios especificado.
+    1. Se proporcionará un archivo `.py` que contiene pruebas automatizadas para el mini proyecto de Python.
+    2. Configurar un **GitHub Action** que ejecute estas pruebas automáticamente cada vez que se realice un push o un pull request al repositorio.
+    3. El workflow debe ser configurado para ejecutar las pruebas en al menos dos versiones diferentes de Python (por ejemplo, 3.8 y 3.9).
+    4. Documentar el proceso de configuración y cualquier problema encontrado durante la implementación.
+  - **Evaluación**: Verificación del workflow configurado y que todas las pruebas pasen correctamente antes de completar el merge.
 
 ### Consideraciones Finales
 
@@ -128,4 +80,4 @@ A continuación se listan todos los endpoints que se deberán implementar en `cr
 - **Documentación**: Asegúrense de documentar cada paso realizado en el repositorio, utilizando los mensajes de commit y el archivo `README.md`.
 - **Fecha Límite**: La hackathon deberá completarse antes del [fecha límite específica], momento en el cual los repositorios serán revisados.
 
-¡Buena suerte a todos!⚡ Que esta hackathon sea una oportunidad para fortalecer su dominio de Git y GitHub.
+¡Buena suerte a todos! ⚡ Que esta hackathon sea una oportunidad para fortalecer su dominio de Git y GitHub.
