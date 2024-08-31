@@ -32,6 +32,7 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
     1. Crear un repositorio público o privado en GitHub. Este repositorio será compartido por todos los miembros del equipo.
     2. Crear un archivo `README.md` en el repositorio (vacío por ahora).
     3. Configurar las reglas de la rama principal (`main` o `master`) para que no se pueda hacer `push` directo a esta rama. Los cambios en la rama principal solo deben realizarse mediante pull requests aprobados.
+    4. Crear un archivo `.gitignore` en el repositorio y añadir los directorios y archivos que no deben ser versionados, por ejemplo, `__pycache__/`, `*.pyc`, `.env`, `venv/`, etc.
   - **Evaluación**: Proveer un enlace al repositorio y capturas de pantalla de la configuración de las reglas de la rama principal.
 
 ### **Checkpoint 3: Gestión de Issues y Pull Requests** 🔄
