@@ -1,8 +1,9 @@
 import unittest
+
 from calculator import calculate
 
-class TestCalculator(unittest.TestCase):
 
+class TestCalculator(unittest.TestCase):
     def test_sum_simple(self):
         self.assertEqual(calculate("2 + 2"), 4)
 
@@ -49,7 +50,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculate("1000000 / 100"), 10000)
 
     def test_divide_resulting_in_fraction(self):
-        self.assertEqual(calculate("7 / 3"), 7/3)
+        self.assertEqual(calculate("7 / 3"), 7 / 3)
 
     def test_divide_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
@@ -140,10 +141,13 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculate(expression), 1001)
 
     def test_large_numbers_with_overflow(self):
-        self.assertEqual(calculate("999999999999 * 999999999999"), 999999999998000000000001)
+        self.assertEqual(
+            calculate("999999999999 * 999999999999"), 999999999998000000000001
+        )
 
     def test_precision_with_floats(self):
         self.assertAlmostEqual(calculate("1.0000000001 + 2.0000000002"), 3.0000000003)
+
 
 if __name__ == "__main__":
     unittest.main()
