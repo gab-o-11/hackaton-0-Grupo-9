@@ -89,6 +89,6 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
 
 - **Comunicación**: Mantengan una comunicación constante a través de plataformas como Slack, Discord o el foro del curso para resolver dudas y coordinarse de manera eficiente.
 - **Documentación**: Asegúrense de documentar cada paso realizado en el repositorio, utilizando los mensajes de commit y el archivo `docs/README.md`.
-- **Fecha Límite**: La hackathon deberá completarse antes del 31 de agosto a las 4 de la tarde, momento en el cual los repositorios serán revisados.
+- **Fecha Límite**: La hackathon deberá completarse antes del 31 de agosto a las 5:20 de la tarde, momento en el cual los repositorios serán revisados.
 
 ¡Buena suerte a todos! ⚡ Que esta hackathon sea una oportunidad para fortalecer su dominio de Git y GitHub.
