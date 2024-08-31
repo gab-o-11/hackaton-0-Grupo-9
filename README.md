@@ -30,7 +30,7 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
 - **Objetivo**: Crear y configurar un repositorio en GitHub que refleje buenas prácticas de desarrollo colaborativo.
   - **Tareas**:
     1. Crear un repositorio público o privado en GitHub. Este repositorio será compartido por todos los miembros del equipo.
-    2. Crear un archivo `README.md` en el repositorio (vacío por ahora).
+    2. Crear un archivo `README.md` en el directorio `docs/` (vacío por ahora).
     3. Configurar las reglas de la rama principal (`main` o `master`) para que no se pueda hacer `push` directo a esta rama. Los cambios en la rama principal solo deben realizarse mediante pull requests aprobados.
     4. Crear un archivo `.gitignore` en el repositorio y añadir los directorios y archivos que no deben ser versionados, por ejemplo, `__pycache__/`, `*.pyc`, `.env`, `venv/`, etc.
   - **Evaluación**: Proveer un enlace al repositorio y capturas de pantalla de la configuración de las reglas de la rama principal.
@@ -41,7 +41,7 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
   - **Tareas**:
     1. Crear un issue en GitHub para cada miembro del equipo. El título del issue debe reflejar la tarea que realizará cada miembro, por ejemplo, "Añadir nombre al README.md".
     2. Cada miembro del equipo debe crear una rama nueva a partir del issue asignado (la rama debe llevar el nombre del issue).
-    3. Cada miembro deberá modificar el archivo `README.md` añadiendo su nombre y un breve párrafo de presentación.
+    3. Cada miembro deberá modificar el archivo `docs/README.md` añadiendo su nombre y un breve párrafo de presentación.
     4. Realizar un pull request de cada rama hacia la rama principal (`main` o `master`) y completar el proceso de revisión y aprobación.
     5. Resolver cualquier conflicto que pueda surgir durante el proceso de merge.
   - **Evaluación**: Mostrar los issues creados, las ramas correspondientes, y el historial de pull requests. Se verificará que haya un pull request por cada miembro del equipo.
@@ -88,7 +88,7 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
 ## Consideraciones Finales
 
 - **Comunicación**: Mantengan una comunicación constante a través de plataformas como Slack, Discord o el foro del curso para resolver dudas y coordinarse de manera eficiente.
-- **Documentación**: Asegúrense de documentar cada paso realizado en el repositorio, utilizando los mensajes de commit y el archivo `README.md`.
+- **Documentación**: Asegúrense de documentar cada paso realizado en el repositorio, utilizando los mensajes de commit y el archivo `docs/README.md`.
 - **Fecha Límite**: La hackathon deberá completarse antes del 31 de agosto a las 4 de la tarde, momento en el cual los repositorios serán revisados.
 
 ¡Buena suerte a todos! ⚡ Que esta hackathon sea una oportunidad para fortalecer su dominio de Git y GitHub.
