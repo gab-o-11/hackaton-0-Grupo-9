@@ -76,7 +76,12 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
   - **Tareas**:
     1. Se proporcionará un archivo `.py` que contiene pruebas automatizadas para el mini proyecto de Python.
     2. Configurar un **GitHub Action** que ejecute estas pruebas automáticamente cada vez que se realice un push o un pull request al repositorio.
-    3. El workflow debe ser configurado para ejecutar las pruebas en al menos dos versiones diferentes de Python (por ejemplo, 3.11 y 3.12).
+    3. El workflow debe ser configurado para ejecutar las pruebas en al menos dos versiones diferentes de Python (por ejemplo, 3.11 y 3.12). Para ejecutar las pruebas de Python, usa el siguiente comando:
+
+          ```sh
+          python -m unittest tests.test
+          ```
+
     4. Documentar el proceso de configuración y cualquier problema encontrado durante la implementación.
   - **Evaluación**: Verificación del workflow configurado y que todas las pruebas pasen correctamente antes de completar el merge.
 
